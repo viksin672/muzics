@@ -1,13 +1,8 @@
-# :musical_note: Echo
+# :musics
 
-[![Build Status](https://travis-ci.org/dkakashi69/Echo.svg?branch=master)](https://travis-ci.org/dkakashi69/Echo)
 
 A music app made with React + Redux + Nodejs
-demo video: (https://www.youtube.com/watch?v=knqfJlnTjtQ)
 
-![image](https://user-images.githubusercontent.com/20469909/41728104-2b752300-75a0-11e8-9caf-3869eaf41c20.png)
-
-![image](https://user-images.githubusercontent.com/20469909/41728185-5a3e2380-75a0-11e8-8356-fc0a810934eb.png)
 
 
 ## Features
@@ -52,4 +47,4 @@ $ docker-compose build
 $ docker-compose up
 ```
 
-After building the app, frontend and backend servers will be merged into a single server and be available at http://localhost:3000
+After building the app, frontend and backend servers will be merged into a single server and be available at http://localhost:5000
