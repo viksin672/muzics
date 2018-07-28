@@ -121,7 +121,7 @@ class Nav extends React.Component {
               {user.username}
             </Link>
             <a href="#" title="Log Out" onClick={this.logOut.bind(this)} className="animating_link">
-              <img src="/svg/sign-out-option.svg" />
+              ->
             </a>
           </div>
         }
