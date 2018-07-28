@@ -1,0 +1,79 @@
+@import 'mixins'
+@import 'colors'
+
+.album-playlist
+  padding: 14px
+
+  &-thumb
+    height: 120px
+    width: 120px
+    border-radius: 50%
+    float: left
+
+  &-header
+    overflow: hidden
+
+.ap-info
+  height: 120px
+  width: calc(100% - 120px)
+  float: left
+  color: $grey-text
+  padding:
+    left: 20px
+
+.ap-title
+  font-size: 20px
+  color: #3eb4bf
+
+.ap-artist
+  margin: 10px 0
+
+.ap-releaseY
+  margin-bottom: 20px
+
+.album-playlist-content
+  margin-top: 20px
+  button
+    margin-top: 10px
+
+  .karaoke-info
+    top: 30px
+
+.album-laylist-artist
+  &-thumb
+    height: 90px
+    width: 90px
+    border-radius: 100px
+    float: left
+
+.album-playlist-artist-info
+  margin-top: 20px
+  width: 60%
+  overflow: hidden
+
+.album-playlist-artist-description
+  width: calc(100% - 90px)
+  float: left
+  padding-left: 20px
+  font-size: 14px
+  color: $grey-text
+  p
+    margin: 0
+
+.ap.playlist-tracks
+  width: 60%
+  margin-top: 20px
+  @include box-shadow
+
+
+
+.karaoke-album-playlist
+  height: 150px
+  width: 60%
+  background-size: 100%
+
+.show-info-btn
+  background-image: linear-gradient(to right, #02b3e4 0%, #02ccba 100%);
+  color: white !important
+  border-radius: 5px
+  padding: 10px

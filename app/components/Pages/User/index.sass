@@ -1,0 +1,158 @@
+@import "colors"
+@import "mixins"
+
+.user-page
+  margin-top: 20px
+
+  &-left
+    width: 60%
+    float: left
+
+    form
+      display: inline
+    input
+      margin: 0
+      margin-left: 20px
+      width: 300px
+
+.playlist-btn
+  border: 0
+  text-shadow: none
+  outline: 0
+  background-color: $light-blue
+  color: white
+  padding: 10px
+  border-radius: 5px
+  cursor: pointer
+  margin-bottom: 20px
+
+  i
+    margin-left: 10px
+
+.user-playlist
+  margin-bottom: 20px
+  &-header
+    position: relative
+    @include box-shadow
+    line-height: 50px
+    vertical-align: middle
+    padding-left: 20px
+    color: #868e96
+    cursor: pointer
+
+    &:hover
+      .playlist-remove-btn
+        display: inline-block
+
+    i
+      display: inline-block
+
+    b
+      margin-left: 10px
+      color: $light-blue
+
+    i
+      float: right
+      margin-right: 60px
+      color: $light-blue
+
+    .user-playlist-title
+      width: 40%
+      float: left
+
+  &-play-btn
+    width: 30%
+    float: left
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    button
+      cursor: pointer
+      i
+        font-size: 20px
+        color: #85C1E9
+
+.user-playlist-inside
+  margin-left: 20px
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+
+.playlist-song
+  border: 1px solid #f2f2f2
+  overflow: hidden
+  margin-top: 10px
+  font-size: 13px
+  > div
+    float: left
+    line-height: 50px
+    vertical-align: middle
+    color: #85929E
+    a
+      color: #85929E
+      &:hover
+        text-decoration: underline
+
+  &-title
+    width: calc(50% - 25px)
+    padding-left: 20px
+
+  &-artists
+    width: calc(45% - 25px)
+    a
+      color: #3eb4bf !important
+
+  &-remove-btn
+    width: 5%
+    height: 50px
+    display: flex
+    align-items: center
+
+    button
+      cursor: pointer
+    i
+      font-size: 20px
+      color: #E74C3C
+
+  &-thumbnail
+    width: 50px
+    height: 50px
+    padding-left: 3px
+    img
+      width: 100%
+      height: 100%
+.user-playlist-play-btn
+  img
+    height: 30px
+    width: 30px
+
+.playlist-remove-btn
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  right: 10px
+  font-size: 20px
+  display: none
+  i
+    margin-right: 0
+    color: #E74C3C
+
+
+
+
+
+.playlist-song-enter
+  opacity: 0.01
+
+.playlist-song-enter.playlist-song-enter-active
+  opacity: 1
+  transition: opacity 500ms ease-in
+
+.playlist-song-leave
+  opacity: 1
+
+.playlist-song-leave.playlist-song-leave-active
+  opacity: 0.01
+  transition: opacity 300ms ease-in

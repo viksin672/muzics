@@ -1,0 +1,189 @@
+@import 'colors'
+@import mixins
+.song-body
+  padding: 20px 20px
+  background: white
+  padding-bottom: 200px
+
+/* .comment-section
+  width: 40%
+  float: left
+  height: 500px */
+
+.song-header
+  height: 80px
+  padding: 10px
+  color: white
+  position: relative
+  background: #114357;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#114357, #F29492);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #114357, #F29492); /* W3C, IE 1  0+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  > span
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translateY(-50%)
+
+  &-info
+    width: 70%
+    height: 60px
+    float: left
+    padding-left: 20px
+  &-img
+    height: 50px
+    background-size: 100%
+  &-song-title
+    font-size: 16px
+    margin-top: 5px
+  &-song-artist
+    margin-top: 10px
+    a
+      color: #73C6B6
+      &:hover
+        color: #45B39D
+  &-actions
+    width: 30%
+    float: right
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 60px
+
+    button
+      margin-left: 15px
+      cursor: pointer
+    i
+      color: #fff !important
+      font-size: 35px
+
+.comment-section-heading
+  color: #343a40
+  font-weight: normal
+  overflow: hidden
+  padding-bottom: 10px
+  border-bottom: 2px solid #ccc
+  h3
+    margin: 0
+  > div
+    &:first-child
+      width: 70%
+      float: left
+      .cmtt
+        font-size: 14px
+      span
+        font-size: 12px
+    &:nth-child(2)
+      margin-top: 5px
+      display: flex
+      align-items: center
+      width: 30%
+      float: left
+      color: #808B96
+      font-family: 'Roboto', sans-serif
+      font-size: 14px
+      font-weight: 600
+      img
+        height: 20px
+        width: 20px
+        margin-right: 10px
+.comment
+  padding: 10px
+  overflow: hidden
+  border-bottom: 1px solid #D5DBDB
+
+  h3
+    margin: 5px
+    font-size: 14px
+  p
+    margin: 5px
+  &-image
+    width: 20%
+    float: left
+  img
+    height: 50px
+    width: 50px
+    border-radius: 100%
+  &-content
+    width: 80%
+    float: left
+    p
+      font-size: 13px
+      color: $grey-1
+.comment-wrapper
+  overflow: hidden
+  display: flex
+  align-items: center
+.comment-owner
+  span
+    padding: 1px 7px
+    font-size: 10px
+    color: white
+    border-radius: 3px
+    background: #6BCFB7
+    margin-left: 10px
+
+.comment-date
+  font-size: 12px
+  padding-left: 5px
+  font-weight: 600
+  color: $grey-1
+.sub-cm-wrapper
+  width: 80%
+  float: right
+
+.have-sub
+  padding-bottom: 10px
+  border-bottom: 1px solid #D5DBDB
+.sub-comment
+  &:last-child
+    border-bottom: none
+    padding-bottom: 0
+  display: flex
+  align-items: center
+
+
+.suggested-section
+  &-heading
+    padding-bottom: 10px
+    border-bottom: 1px solid #D5DBDB
+  span
+    color: #34495E
+    font-size: 17px
+
+.suggested-song
+  margin-top: 10px
+  overflow: hidden
+  padding-bottom: 10px
+  border-bottom: 1px solid #D5DBDB
+  &-info
+    width: calc(100% - 50px)
+    float: right
+    height: 50px
+    padding: 8px 10px 0 20px
+    font-family: "Roboto", sans-serif
+  &-name
+    display: block
+    font-size: 14px
+    color: #5D6D7E
+    margin-bottom: 5px
+    &:hover
+      text-decoration: underline
+  &-artist
+    font-size: 12px
+    line-height: 15px
+
+  img
+    display: block
+    width: 50px
+    height: 50px
+    float: left
+
+
+.suggested-left
+  width: 40%
+  float: left
+
+.suggested-right
+  width: 40%
+  float: right

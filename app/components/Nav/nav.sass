@@ -1,0 +1,139 @@
+@import "colors"
+
+nav
+  height: 50px
+  background: white
+  padding: 0 50px
+  position: fixed
+  width: 100%
+  min-width: 1120px
+  z-index: 3
+  top: 0
+  left: 0
+
+.logo
+  height: 100%
+  float: left
+  width: 15%
+  a
+    /*background: orange*/
+    height: 100%
+    display: inline-block
+    color: #fff
+    line-height: 50px
+    font-size: 32px
+    font-family: cursive
+    width: 100%
+    text-align: center
+    color: black
+
+
+.searchBar
+  width: 40%
+  padding: 7px 20px
+  float: left
+  position: relative
+  input
+    width: 100%
+    background: transparent
+    outline: 0
+    font-family: "Roboto", sans-serif
+    color: black
+    border: 1px solid #4c4c5f
+    border-radius: 3px
+    display: block
+    margin: 0
+    font-size: 15px
+    padding: 8px 24px 8px 40px
+
+.search-wrapper
+  background-color: #fff
+  position: relative
+  i
+    color: black
+    position: absolute
+    font-size: 22px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+
+
+.nav-menu
+  a
+    text-transform: uppercase
+    display: inline-block
+    height: inherit
+    line-height: 50px
+    vertical-align: middle
+    padding: 0 20px
+    color: black
+    float: left
+    font-size: 13px
+
+  &-link-active
+    &:before
+      visibility: visible !important
+      -webkit-transform: scaleX(1) !important
+      transform: scaleX(1) !important
+
+
+.auth-btns
+  width: 15%
+  height: 50px
+  display: inline-block
+  a
+    text-transform: uppercase
+    display: inline-block
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 50px
+    font-size: 13px
+    padding: 5px 8px
+    border-radius: 3px
+    width: 50%
+    float: left
+    color: #232323
+
+
+    img
+      width: 20px
+      height: 20px
+      margin-right: 10px
+/* .sInLink
+  background: #fab005 */
+/* .sUpLink
+  background: $teal-1 */
+
+.navRight
+  width: 30%
+  float: left
+  height: 50px
+
+.user
+  height: 50px
+  width: 15%
+  float: right
+  line-height: 50px
+  vertical-align: middle
+  a
+    text-transform: uppercase
+    display: inline-block
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 50px
+    font-size: 13px
+    padding: 5px 8px
+    border-radius: 3px
+    width: 50%
+    float: left
+    color: #232323
+
+    &:first-child
+      color: #15d2fd
+    img
+      width: 20px
+      height: 20px
+      margin-right: 10px
+

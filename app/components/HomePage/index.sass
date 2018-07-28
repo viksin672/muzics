@@ -1,0 +1,169 @@
+@import 'colors'
+@import 'mixins'
+
+.hp-track-list-wrapper
+  width: 60%
+  float: left
+  padding-left: 20px
+  min-height: 200px
+
+.hp-track-list
+  position: relative
+  padding-bottom: 100px
+
+  li
+    height: 80px
+    font-size: 14px
+    position: relative
+    transition: transform 0.3s ease-in-out
+    box-shadow: 0 0 8px rgba(0,0,0,.3)
+    margin-bottom: 10px
+    &:hover
+      cursor: pointer
+    > div
+      height: inherit
+
+.isFading
+  opacity: 0.5
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
+.track-thumb
+  padding: 10px 20px 10px 0
+  width: 80px
+  height: 100%
+  float: left
+.trackPosition
+  line-height: 80px
+  vertical-align: middle
+  text-align: center
+  width: 10%
+  float: left
+.trackDetail
+  width: calc(100% - 40% - 80px)
+  float: left
+  padding: 10px 0
+.homepage
+  background-color: #fff
+
+.trackTitle
+  margin-top: 10px
+  a
+    color: $grey-text
+    &:hover
+      text-decoration: underline
+.trackArtist
+  margin-top: 10px
+  a
+    font-size: 12px
+    color: $light-blue !important
+.trackActions
+  width: 30%
+  float: right
+  position: relative
+  .hp-track-toolbar
+    height: 100%
+    width: 100%
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    button
+      padding: 0
+    i
+      color: #cecbcb
+      font-size: 18px
+      margin-right: 20px
+      &:hover
+        cursor: pointer
+        opacity: 0.8
+
+i.ion-android
+  &-download
+    color: #27DED5 !important
+
+  &-share
+    color: #58D68D !important
+
+i.ion-more
+  color: #5D6D7E !important
+
+.chart-wrapper
+  margin-top: -60px
+  margin-right: 20px
+  width: 35%
+  float: right
+  padding: 0 15px
+
+.isDownloading
+  margin-right: 5px
+
+.home-nav
+  margin: 20px
+.choice
+  width: 20%
+  height: 40px
+  border-radius: 5px
+  border: 1px solid #27DED5
+  line-height: 40px
+  vertical-align: middle
+  padding-left: 20px
+  color: #27DED5
+  font-size: 15px
+  cursor: pointer
+  position: relative
+  font-family: "Roboto", sans-serif
+
+  &-active, &:hover
+    @extend .choice-active
+
+  i
+    float: right
+    margin-right: 20px
+
+  &-list
+    position: absolute
+    left: 0
+    right: 0
+    z-index: 1
+    background: #fff
+    color: #95A5A6
+    box-shadow: 0 1px 8px rgba(0,0,0,.2)
+
+    li
+      padding-left: 20px
+      &:hover
+        color: #27DED5
+
+
+.choice-active
+  background-image: linear-gradient(to right, #02b3e4 0%, #02ccba 100%)
+  color: #fff
+
+.choice-active-item
+  color: #27DED5
+
+.chart-panel-btn-active
+  background-image: linear-gradient(to right, #02b3e4 0%, #02ccba 100%)
+  color: #fff !important
+
+.chart-panel
+  height: 50px
+  margin-bottom: 10px
+
+
+  button
+    &:not(.chart-panel-btn-active)
+      color: #5D6D7E !important
+    height: 100%
+    width: calc(100% / 3)
+    cursor: pointer
+    &:hover
+      border: 1px solid #27DED5
+
+
+
+

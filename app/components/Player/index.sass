@@ -1,0 +1,141 @@
+@import 'colors'
+
+.player
+  height: 48px
+  border-top: 1px solid #e3e3e3
+  position: fixed
+  z-index: 300
+  min-width: 1120px
+  display: flex
+  align-items: center
+  bottom: 0
+  right: 0
+  left: 0
+  padding: 0 5%
+  background: white
+
+img.player-song-thumbnail
+    height: 90%
+    width: 3.5%
+    display: block
+    float: left
+.player-info
+  height: inherit
+  float: left
+  font-size: 13px
+  width: 20%
+  padding: 5px 20px
+  span
+    display: block
+    font-weight: 600
+    color: #2E4053
+  .player-info-artists
+    margin-top: 5px
+    a
+      font-size: 13px
+      color: #1ABC9C
+      // display: block
+      &:hover
+        text-decoration: underline
+      &:last-child
+        // color: $grey-text
+        margin-top: 3px
+
+.player-song-title
+  font-size: 15px
+  color: #70777d
+  &:hover
+    color: #a8adb1
+.player-seek
+  float: left
+  height: inherit
+  width: 45%
+  display: flex
+  align-items: center
+  padding-left: 20px
+  span
+    color: $grey-text
+    font-size: 13px
+
+.player-btns
+  width: 15%
+  float: left
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-left: 20px
+  img
+    opacity: 0.8
+    &:hover
+      opacity: 1.0
+      cursor: pointer
+
+.player-btn
+  padding: 10px
+  width: 40px
+  cursor: pointer
+  &:not(:last-of-type)
+    opacity: 0.8
+  &:hover
+    opacity: 1.0
+  i
+
+    color: #34495E
+    font-size: 16px
+
+#queue
+  &:hover
+   fill: $gb-1
+
+.player-overlay
+  position: absolute
+  width: 100%
+  height: 48px
+  top: 0
+  left: 0
+  background: rgba(255,255,255, 0.7)
+
+.player-loader
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  height: 100%
+  right: 10px
+  display: flex
+  align-items: center
+
+.player-loading
+  img
+    height: 35px
+    display: inline-block
+    margin-right: 20px
+
+.player-other
+  width: 10%
+  float: left
+  height: 100%
+  display: flex
+  align-items: center
+  padding-left: 20px
+  button
+    padding: 15px
+    cursor: pointer
+    i
+      font-size: 18px
+
+.queue-btn
+  position: relative
+
+.queue-circle
+  position: absolute;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  background: #bc5adc;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 15px;
+  vertical-align: middle;
+  right: 0px;
+  bottom: 10px;

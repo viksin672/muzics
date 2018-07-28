@@ -1,0 +1,50 @@
+@import 'mixins'
+@import 'colors'
+
+.playlist
+  &-tracks
+    width: 60%
+    margin-top: 20px
+    @include box-shadow
+
+  &-track
+    overflow: hidden
+    border-bottom: 1px solid #dedede
+    font-size: 14px
+    color: $grey-text
+    span, div
+      height: 50px
+      float: left
+      line-height: 50px
+      vertical-align: middle
+      text-align: center
+
+    &-order
+      display: block
+      width: 50px
+      line-height: 50px
+      vertical-align: middle
+      float: left
+
+    &-title
+      width: calc(55% - 50px)
+      text-align: left !important
+      padding-left: 10px
+      a
+        color: $light-blue
+        &:hover
+          text-decoration: underline
+
+    &-artist
+      width: 45%
+      a
+        color: $grey-text
+
+    /* &-actions
+      width: calc(25% - 50px)
+      button
+        cursor: pointer
+        padding: 0 10px
+      i
+        font-size: 18px
+        color: #45B39D */
