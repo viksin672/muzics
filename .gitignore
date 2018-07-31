@@ -1,7 +1,7 @@
 node_modules
 node-sass
 .vscode
-package-lock.json
+package-lock
 debug.log
 public/*
 !public/fonts
