@@ -1,5 +1,6 @@
 # :musics
 
+https://muzics.herokuapp.com
 
 A music app made with React + Redux + Nodejs
 
@@ -8,7 +9,7 @@ A music app made with React + Redux + Nodejs
 ## Features
 * login to create and listen to your playlists
 * download song when you are logged in
-* lazy, paginated fetching
+* paginated fetching
 * player play/stop/forward/backward track
 * search tracks by name and artist
 
@@ -20,7 +21,6 @@ Install and start MongoDB (https://docs.mongodb.org/manual/installation).
 
 Install Node.js (http://nodejs.org). Any version above 6.0 works fine
 
-Open .env and adjust the `MONGODB_URI` to your MongoDB server name (localhost normally works if you're running locally).
 
 1. Run `npm install`.
 
@@ -28,7 +28,6 @@ Open .env and adjust the `MONGODB_URI` to your MongoDB server name (localhost no
 
 Wait for the build process to complete
 
-![carbon](https://user-images.githubusercontent.com/20469909/41726824-29385c4a-759d-11e8-9c5c-15a48452ad6e.png)
 
 3. Run `npm run dev:server` to start the api server
 
@@ -39,12 +38,6 @@ Navigate to http://localhost:8000 in your browser to explore the app
 ```
  $ npm start
 ```
-Or
-* Build with Docker Compose
 
-```
-$ docker-compose build
-$ docker-compose up
-```
 
 After building the app, frontend and backend servers will be merged into a single server and be available at http://localhost:5000
