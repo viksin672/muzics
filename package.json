@@ -2,7 +2,7 @@
   "name": "muzics",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
   "scripts": {
     "start": "npm run build && npm run server",
     "dev:client": "npm run webpack:dev",
