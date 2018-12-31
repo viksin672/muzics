@@ -10,7 +10,7 @@
     "server": "cross-env NODE_ENV=production node server",
     "clean": "node rimraf",
     "webpack:dev": "./node_modules/.bin/webpack-dev-server --content-base public --inline --hot --progress",
-    
+    "webpack:prod": "./node_modules/.bin/webpack --env=prod --progress --profile --colors",
     "build": "npm run clean && npm run webpack:prod",
     "test": "ava --verbose"
   },
