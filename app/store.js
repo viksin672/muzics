@@ -22,6 +22,7 @@ const persistedData = {
     errors: {},
   },
 };
+//ko
 const store = createStore(rootReducer, persistedData, applyMiddleware(...middleware));
 
 store.subscribe(_throttle(() => {
