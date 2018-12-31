@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "ISC",
   "scripts": {
-    "start": "npm run build && npm run server",
+    "start": " npm run server",
     "dev:client": "npm run webpack:dev",
     "dev:server": "cross-env DEBUG=server:* nodemon ./server",
     "server": "cross-env NODE_ENV=production node server",
     "clean": "node rimraf",
     "webpack:dev": "./node_modules/.bin/webpack-dev-server --content-base public --inline --hot --progress",
     "webpack:prod": "./node_modules/.bin/webpack --env=prod --progress --profile --colors",
-    "build": "npm run clean && npm run webpack:prod",
+    
     "test": "ava --verbose"
   },
   "ava": {
